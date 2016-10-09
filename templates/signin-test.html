@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+you name is {{ session["username"]  }} <br>
+you pass is {{ session["password"]  }} <br>
+{% if session["password"] %}
+ if in {{ session["password"]  }}  <br>
+{% endif %}
+
+<a href="/outer-page"> to other page </a>
+</body>
+</html>
